@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Train Timetable</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron jumbotron-fluid text-center">
+                    <div class="container">
+                        <h1 class="display-4">Train Timetable</h1>
+                        <p class="lead">A Comprehensive Customizable Timetable for Local Train Station</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <h5 class="card-header">Current Train Schedule</h5>
+                    <div class="card-body">
+                            <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <!-- <th scope="col">#</th> -->
+                                        <th scope="col">Train Name</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Frequency (min)</th>
+                                        <th scope="col">Next Arrival</th>
+                                        <th scope="col">Minutes Away</th>
+                                        <th scope="col">Cancel</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="tbody">
+                                      
+                                    </tbody>
+                                   </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <h5 class="card-header">Add Train</h5>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                    <label for="input-name">Train Name</label>
+                                    <input type="text" class="form-control" id="input-name" placeholder="Orient Express">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-dest">Destination</label>
+                                    <input type="text" class="form-control" id="input-dest" placeholder="Munich">
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-first-time">First Train Time (HH:mm - military time)</label>
+                                    <input type="text" class="form-control" id="input-first-time"
+                                    placeholder="13:05">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                    <label for="input-frequency">Frequency (min)</label>
+                                    <input type="number" class="form-control" id="input-frequency" placeholder="120">
+                                    <br>
+                                    <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

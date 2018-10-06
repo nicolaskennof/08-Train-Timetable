@@ -1,0 +1,10 @@
+body {
+    margin-bottom: 80px;
+    background-image: url(../images/back_train.jpg);
+    background-size: cover;
+    /*background-position: center center;*/
+}
+
+.scope {
+    border-top: 0;
+}
