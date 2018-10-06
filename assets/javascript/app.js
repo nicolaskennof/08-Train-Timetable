@@ -57,9 +57,10 @@ database.ref().on("child_added", function (snapshot) {
   let timeAwayTd = $("<td>");
   let cancelTd = $("<td>");
   let cancelButton = $("<button>")
+  let cross = $("<i>");
+  cross.addClass("fas fa-times-circle");
   cancelButton.addClass("btn btn-danger text-center delete");
   cancelButton.attr("data-id", snapshot.key);
-  cancelButton.text("X");
 
   // Button event handler
   cancelButton.on("click", cancelHandler);
@@ -101,6 +102,7 @@ database.ref().on("child_added", function (snapshot) {
   row.append(timeAwayTd);
   row.append(cancelTd);
   cancelTd.append(cancelButton);
+  cancelButton.append(cross);
 
   row.appendTo("#tbody");
 
