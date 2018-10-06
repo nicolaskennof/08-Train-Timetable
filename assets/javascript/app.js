@@ -39,6 +39,11 @@ $("#add-train").on("click", function (event) {
 
   alert("Train Successfully Added");
 
+  $("#input-name").val("");
+  $("#input-dest").val("");
+  $("#input-first-time").val("");
+  $("#input-frequency").val("");
+
 });
 
 // Firebase watcher
@@ -111,7 +116,7 @@ database.ref().on("child_added", function (snapshot) {
   console.log("Errors handled: " + errorObject.code);
 });
 
-function cancelHandler () {
+function cancelHandler() {
   var dataKey = $(this).attr("data-id");
   console.log(dataKey);
   database.ref(dataKey).remove();

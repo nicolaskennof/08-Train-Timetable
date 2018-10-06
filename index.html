@@ -31,59 +31,59 @@
                 <div class="card">
                     <h5 class="card-header"><i class="far fa-calendar-alt"></i> Current Train Schedule</h5>
                     <div class="card-body">
-                            <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <!-- <th scope="col">#</th> -->
-                                        <th scope="col">Train Name</th>
-                                        <th scope="col">Destination</th>
-                                        <th scope="col">Frequency (min)</th>
-                                        <th scope="col">Next Arrival</th>
-                                        <th scope="col">Minutes Away</th>
-                                        <th scope="col">Cancel</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody id="tbody">
-                                      
-                                    </tbody>
-                                   </table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <!-- <th scope="col">#</th> -->
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                    <th scope="col">Cancel</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
         <br>
         <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <h5 class="card-header"><i class="far fa-calendar-plus"></i> Add Train</h5>
-                        <div class="card-body">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
+            <div class="col-md-12">
+                <div class="card">
+                    <h5 class="card-header"><i class="far fa-calendar-plus"></i> Add Train</h5>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
                                     <label for="input-name">Train Name</label>
                                     <input type="text" class="form-control" id="input-name" placeholder="Orient Express">
-                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="input-dest">Destination</label>
-                                    <input type="text" class="form-control" id="input-dest" placeholder="Munich">
-                                </div>
-                                <div class="form-group">
-                                    <label for="input-first-time">First Train Time (HH:mm - military time)</label>
-                                    <input type="text" class="form-control" id="input-first-time"
-                                    placeholder="13:05">
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-dest">Destination</label>
+                                <input type="text" class="form-control" id="input-dest" placeholder="Munich">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-first-time">First Train Time (HH:mm - military time)</label>
+                                <input type="text" class="form-control" id="input-first-time" placeholder="13:05">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
                                     <label for="input-frequency">Frequency (min)</label>
                                     <input type="number" class="form-control" id="input-frequency" placeholder="120">
                                     <br>
-                                    <button type="submit" class="btn btn-primary" id="add-train"><i class="fas fa-check"></i> Submit</button>
-                                    </div>
-                            </form>
-                        </div>
+                                    <button type="submit" class="btn btn-primary" id="add-train"><i class="fas fa-check"></i>
+                                        Submit</button>
+                                </div>
+                        </form>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
