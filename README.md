@@ -10,7 +10,7 @@ Easy train timetable management
 The train timetable helps register trains and first daily departure in order to calculate the next train time and how much time left before it arrives.
 
 #========== 2. How to get started? ==========
-Submit the train details filling-up those in the form below the table.
+Please visit https://nicolaskennof.github.io/08-Train-Timetable/ and submit the train details filling-up those in the form below the table.
 
 #========== 3. Who maintains and contributes? ==========
 Nicolas Kennof is the main contributor to this project.
